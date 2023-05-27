@@ -1,0 +1,88 @@
+@import "utils/_normalize";
+@import "utils/reset";
+@import "../../../node_modules/choices.js/src/styles/choices";
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 20px 15px;
+  margin: 0 auto;
+}
+
+.page__header {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.page__description {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.map__wrapper {
+  padding: 0 15px;
+  position: relative;
+
+  .map__points {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 10px 21px -10px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .map__point {
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#map {
+  aspect-ratio: 2/1;
+}
+
+.select__wrapper {
+  margin-bottom: 10px;
+}
+
+.find_location {
+  .find__btn {
+    text-decoration: underline;
+    color: black;
+
+    img {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page__header {
+    font-size: 1.5rem;
+  }
+  #map {
+    aspect-ratio: 1/1;
+
+    .map__wrapper {
+      .map__points {
+        display: none !important;
+      }
+    }
+  }
+}

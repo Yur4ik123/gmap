@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <!--deletestart-->
+
+  <!--deleteend-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+  />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+<div id="app">
+  <div class="container">
+    <h1 class="page__header">Find you san miguel</h1>
+    <h3 class="page__description">
+      Your next adventure migth be around the carner. Find the top San
+      Mifuel places around Europe by manualle selecting the country you are
+      in from the list below or clicking on the location link.
+    </h3>
+
+    <div class="select__wrapper">
+      <select class="selectize" id="custom_select">
+        <option placeholder>Select country</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+    <div class="find_location">
+      <a href="#" class="find__btn" id="get_location"> Find San Miguel near me <img src="./assets/img/location.png" width="24px"
+                                                                 height="20px" alt=""></a>
+    </div>
+  </div>
+  <div class="map__wrapper">
+    <div id="map" style="width: 100%;"></div>
+    <ul class="map__points" >
+      <li><a href="" class="map__point">map_point</a></li>
+      <li><a href="" class="map__point">map_point</a></li>
+      <li><a href="" class="map__point">map_point</a></li>
+      <li><a href="" class="map__point">map_point</a></li>
+
+    </ul>
+  </div>
+</div>
+
+</body>
+
+</html>
