@@ -4,30 +4,50 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-    />
+  />
   <title>Головна</title>
-</head>
+<link href="assets/css/app.4be74091c32a9c283157.css" rel="stylesheet"></head>
 
 <body>
-  <div id="app">
-    <div class="container">
-      <h1 class="page__header">Find you san miguel</h1>
-      <h3 class="page__description">
-        Your next adventure migth be around the carner. Find the top San
-        Mifuel places around Europe by manualle selecting the country you are
-        in from the list below or clicking on the location link.
-      </h3>
-      <div class="select__wrapper"></div>
+<div id="app">
+  <div class="container">
+    <h1 class="page__header">Find you san miguel</h1>
+    <h3 class="page__description">
+      Your next adventure migth be around the carner. Find the top San
+      Mifuel places around Europe by manualle selecting the country you are
+      in from the list below or clicking on the location link.
+    </h3>
+
+    <div class="select__wrapper">
+      <select class="selectize" id="custom_select">
+        <option placeholder>Select country</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
     </div>
-    <div class="map__wrapper">
-      <div id="map" style="width: 100%; height: 400px"></div>
+    <div class="find_location">
+      <a href="#" class="find__btn" id="get_location"> Find San Miguel near me <img src="./assets/img/location.png" width="24px"
+                                                                 height="20px" alt=""></a>
     </div>
+  </div>
+  <div class="map__wrapper">
+    <div id="map" style="width: 100%;"></div>
+    <ul class="map__points" >
+      <li><a href="" class="map__point">map_point</a></li>
+      <li><a href="" class="map__point">map_point</a></li>
+      <li><a href="" class="map__point">map_point</a></li>
+      <li><a href="" class="map__point">map_point</a></li>
+
+    </ul>
+  </div>
 </div>
 
-<script type="text/javascript" src="assets/js/app.79e29f481bed2c1e3ac8.js"></script></body>
+<script type="text/javascript" src="assets/js/vendors.4be74091c32a9c283157.js"></script><script type="text/javascript" src="assets/js/app.4be74091c32a9c283157.js"></script></body>
 
 </html>
